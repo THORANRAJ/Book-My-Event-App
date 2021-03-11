@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bookmyevent">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Restaurant"></activity>
+        <activity android:name=".Rating" />
+        <activity android:name=".Help" />
+        <activity android:name=".Purchase_history" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Upi_activity" />
+        <activity android:name=".Cd_card" />
+        <activity android:name=".Payment_mode" />
+        <activity android:name=".Confirm_page" />
+        <activity android:name=".Book_movies" />
+        <activity android:name=".Booking_sports" />
+        <activity android:name=".Sports" />
+        <activity android:name=".Movies" />
+        <activity android:name=".Mainpart" />
+        <activity android:name=".register" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

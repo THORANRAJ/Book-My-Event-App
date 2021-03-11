@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/wrapper3"
+
+    android:background="@drawable/custom_background_sports">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/wrapper2"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="377dp"
+            android:layout_height="190dp"
+            android:id="@+id/wrapper1"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv"
+                android:layout_width="139dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/name"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="190dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/matname"
+                    android:layout_width="225dp"
+                    android:layout_height="73dp"
+                    android:layout_margin="10dp"
+                    android:text="match"
+
+                    android:textColor="#090808"
+                    android:textSize="30sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="227dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="location"
+                    android:textColor="#080909"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="date"
+                    android:textColor="#070606"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

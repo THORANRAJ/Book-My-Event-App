@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background_signup"
+    tools:context=".register">
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="343dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/name"
+        android:ems="10"
+        android:hint="Full Name:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etmail"
+        android:layout_width="343dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/mailid"
+        android:ems="10"
+        android:hint="Email:"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etname" />
+
+    <EditText
+        android:id="@+id/etpass"
+        android:layout_width="343dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/password"
+        android:ems="10"
+        android:hint="Password:"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etmail" />
+
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="343dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/phone"
+        android:ems="10"
+        android:hint="Phone Number:"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etpass" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="173dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/custom_button"
+        android:text="submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etphone" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="211dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="68dp"
+        android:text="Sign Up!"
+        android:textColor="#F1E3E3"
+        android:textSize="54sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="76dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="48dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

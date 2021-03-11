@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@drawable/custom_background_mainpart"
+    tools:context=".Mainpart">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="337dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="48dp"
+        android:text="Almost There!"
+        android:textColor="#FFFFFF"
+        android:textSize="72sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="247dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="204dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movies"
+            android:textColor="#FAEFEF"
+            android:textSize="36sp"
+            android:textStyle="bold|italic" />
+
+        <RadioButton
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sports"
+            android:textColor="#F3DCDC"
+            android:textSize="36sp"
+            android:textStyle="bold|italic" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/okbtn"
+        android:layout_width="164dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/custom_button"
+        android:text="OK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="393dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="56dp"
+        android:text="Select your category"
+        android:textColor="#F8EBEB"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="680dp"
+        android:clickable="true"
+        android:text="🧙🏻‍♀️profile"
+        android:textColor="#84FFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
